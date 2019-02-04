@@ -1,0 +1,10 @@
+rootProject.name = 'Contacts'
+
+include ':react-native-google-signin', ':app'
+project(':react-native-google-signin').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-google-signin/android')
+
+include ':react-native-google-drive-picker'
+project(':react-native-google-drive-picker').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-google-drive-picker/android')
+
+include ':react-native-bugsnag'
+project(':react-native-bugsnag').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-bugsnag/android')
